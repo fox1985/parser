@@ -23,6 +23,8 @@ def parser():
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
         'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0',
     }
+
+
     #перебор по пагинации
     i = 0
     while i <= 6:
