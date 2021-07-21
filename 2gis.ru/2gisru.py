@@ -28,9 +28,9 @@ def parser():
     """парсит прохотдит на вторую страницу обевления """
     i = 0
 
-    while i <= 2:
+    while i <= 1:
         url = f"https://2gis.ru/moscow/search/%D0%9A%D1%80%D0%B0%D1%81%D0%BE%D1%82%D0%B0/page/{i}"
-        i = i +1
+        i += 1
 
 
 
