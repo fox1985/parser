@@ -19,17 +19,13 @@ def gis_csv(data):
 
 def parser():
     """парсит прохотдит на вторую страницу обевления """
-    headers = {
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0',
-    }
+    headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0', 'accept': '*/*'}
 
 
     #перебор по пагинации
-    i = 0
-    while i <= 6:
-        url = f"https://2gis.ru/moscow/search/%D0%9A%D1%80%D0%B0%D1%81%D0%BE%D1%82%D0%B0/page/{i}"
-        i += 1
+    i = 6
+    url = f"https://2gis.ru/moscow/search/%D0%9A%D1%80%D0%B0%D1%81%D0%BE%D1%82%D0%B0/page/{i}"
+
 
 
     base_url = "https://2gis.ru/moscow/search/"
