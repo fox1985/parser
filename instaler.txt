@@ -1,7 +1,9 @@
 sudo pip3 install requests beautifulsoup4 lxml
 pip install selenium
 
-pip3 install requests beautifulsoup4 lxml
+pip3 install requests beautifulsoup4 lxml fake-useragent
+
+pip install fake-useragent
 
 скопировать для устоановки selenium
 sudo cp geckodriver /usr/local/bin/
