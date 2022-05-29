@@ -42,6 +42,7 @@ def parse_prodoucts(urls):
             break
         name = soup.select_one('#product_name').text.strip()
         amount = soup.select_one('#product_amount').text.strip()
+        description = soup.select_one('#description').text.strip()
         techs = {}
 
         for row in soup.select('#characteristics tbody tr'):
@@ -53,6 +54,7 @@ def parse_prodoucts(urls):
                 'name': name,
                 'amount': amount,
                 'techs': techs,
+                'description': description,
             }
 
             data.append(item)
