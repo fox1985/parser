@@ -51,7 +51,7 @@ def strike(text):
 def get_page_data(html):
     urls = []
     soup = BeautifulSoup(html, 'lxml')
-    container = soup.select('div.dtList.i-dtList.j-card-item')
+    container = soup.select('div.catalog-page__content')
 
 
     for con in container:
@@ -88,7 +88,7 @@ def get_page_data(html):
 
 
 def main():
-    url = 'https://www.wildberries.ru/catalog/obuv/detskaya'
+    url = 'https://www.wildberries.ru/brands/xiaomi/all'
     get_page_data(get_html(url))
 
 
