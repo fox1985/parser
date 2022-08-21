@@ -61,7 +61,7 @@ def get_page_data(html):
         price = con.find('span', class_='price').text
         a = con.find('a', class_='j-open-full-product-card')['href']
         links = {
-            'href': f'https://www.wildberries.kz{a}'
+            'href': f'https://www.wildberries.ru{a}'
         }
         urls.append(links)
 
