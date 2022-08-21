@@ -88,7 +88,7 @@ def get_page_data(html):
 
 
 def main():
-    url = 'https://www.wildberries.ru/catalog/obuv/detskaya'
+    url = 'https://kz.wildberries.ru/catalog?category=60600&sort=popular'
     get_page_data(get_html(url))
 
 
