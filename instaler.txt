@@ -1,6 +1,8 @@
 sudo pip3 install requests beautifulsoup4 lxml
 pip install selenium
 
+pip install requests-html
+
 pip3 install requests beautifulsoup4 lxml fake-useragent
 
 pip install fake-useragent
